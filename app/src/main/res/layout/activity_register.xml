@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_register_text"
+        android:layout_marginTop="30dp"
+        android:text="注册账号"
+        android:textSize="40sp"
+        android:layout_marginStart="30dp"
+        android:textColor="#000"
+        />
+
+    <EditText
+        android:id="@+id/et_register_username"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_register_text"
+        android:layout_marginTop="50dp"
+        android:drawableStart="@drawable/ic_baseline_account_circle_24"
+        android:hint="账号"
+        android:inputType="number"
+        android:lines="1" />
+
+    <EditText
+        android:id="@+id/et_register_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ?!=+-_.,"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_register_username"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:lines="1" />
+
+    <Button
+        android:id="@+id/btn_register_re"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="立即注册"
+        android:layout_below="@+id/et_register_password"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
